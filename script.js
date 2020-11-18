@@ -103,7 +103,7 @@ document.getElementById("tojson").addEventListener('click', function(e) {
 
 
 		var filename = document.createElement('span');
-		filename.innerHTML = document.getElementById('finput').files[0].name ? document.getElementById('finput').files[0].name : '<pasted text>';
+		filename.innerHTML = document.getElementById('finput').files[0] ? document.getElementById('finput').files[0].name : '<pasted text>';
 		filename.setAttribute('class', 'pretext');
 		// document.getElementById("output").appendChild(filename);
 
