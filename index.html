@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Text file reading</title> 
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head> 
+<style type="text/css"> 
+	body {
+		width:80%;
+		margin: auto;
+	}
+	
+	textarea { 
+		margin-top:1em;
+		margin-bottom: 15px;
+		padding: 5px; 
+		width: 100%; 
+	} 
+
+	pre {outline: 1px solid #ccc; padding: 5px; width:100%; text-align:left; padding-bottom:4em;}
+	.string { color: green; }
+	.number { color: darkorange; }
+	.boolean { color: blue; }
+	.null { color: magenta; }
+	.key { color: red; }
+
+	.controls {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.pretext {
+	    background: #0000000a;
+	    color: #888;
+	    padding-right: 0.5em;
+	    padding-left: 0.5em;
+  	}
+
+  	.precontrols {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin-top: -2.5em;
+	    position: absolute;
+	}
+</style> 
+
+<body> 
+	<center>  
+		<div> 
+			<div class="controls">
+				<input type="file" id="finput"> 
+				<div>
+					<input type="button" value="To JSON" id="tojson"> 
+					<input type="button" value="Clear" id="clear"> 
+				</div>
+			</div>
+			<textarea id="input" cols="30" rows="20" placeholder="Paste text here or click browse to load."></textarea> 
+		</div> 
+		<div id="output" style="position:relative"> 
+		</div> 
+	</center> 
+	<script src="script.js"></script> 
+</body> 
+
+</html> 
